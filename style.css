@@ -14,6 +14,9 @@
     --border-color: #2a2a3a;
     --success: #00ff88;
     --error: #ff3366;
+    /* Chicago Municipal Colors */
+    --chicago-star-red: #E4002B;
+    --chicago-flag-blue: #41B6E6;
 }
 
 body {
@@ -32,6 +35,25 @@ body {
     width: 100%;
     max-width: 500px;
     text-align: center;
+}
+
+/* Chicago 6-pointed star */
+.chicago-star {
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 2rem;
+    animation: star-rotate 20s linear infinite;
+    filter: drop-shadow(0 0 20px rgba(228, 0, 43, 0.8)) drop-shadow(0 0 40px rgba(228, 0, 43, 0.5));
+}
+
+@keyframes star-rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 header {

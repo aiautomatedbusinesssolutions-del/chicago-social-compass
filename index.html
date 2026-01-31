@@ -12,7 +12,14 @@
 <body>
     <div class="container">
         <header>
-            <h1 class="compass-title">Chicago Compass</h1>
+            <div style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+                <!-- Chicago 6-pointed star -->
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="width: 40px; height: 40px; animation: star-rotate 20s linear infinite;">
+                    <polygon points="50,5 90,75 10,75" fill="#E4002B"/>
+                    <polygon points="50,95 10,25 90,25" fill="#41B6E6"/>
+                </svg>
+                <h1 class="compass-title">Chicago Compass</h1>
+            </div>
             <p class="tagline">The digital compass for real-world connection</p>
             <p class="subtitle">Skip the profile, find the crowd</p>
         </header>
