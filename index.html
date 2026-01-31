@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicago Compass - Find Your Crowd</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="compass-title">Chicago Compass</h1>
+            <p class="tagline">The digital compass for real-world connection</p>
+            <p class="subtitle">Skip the profile, find the crowd</p>
+        </header>
+
+        <main>
+            <div class="compass-display" id="compassDisplay">
+                <div class="compass-ring">
+                    <div class="compass-center">
+                        <div class="compass-needle"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="selection-section">
+                <div class="selection-group">
+                    <label class="selection-label">Select your Vibe</label>
+                    <div class="pill-container" id="vibeContainer">
+                        <button class="pill-button" data-vibe="Sports">Sports</button>
+                        <button class="pill-button" data-vibe="Tech">Tech</button>
+                        <button class="pill-button" data-vibe="Artists">Artists</button>
+                        <button class="pill-button" data-vibe="Foodies">Foodies</button>
+                        <button class="pill-button" data-vibe="Music">Music</button>
+                    </div>
+                </div>
+
+                <div class="selection-group">
+                    <label class="selection-label">Select your Neighborhood</label>
+                    <div class="pill-container" id="neighborhoodContainer">
+                        <button class="pill-button" data-neighborhood="Wicker Park">Wicker Park</button>
+                        <button class="pill-button" data-neighborhood="West Loop">West Loop</button>
+                        <button class="pill-button" data-neighborhood="Wrigleyville">Wrigleyville</button>
+                        <button class="pill-button" data-neighborhood="Logan Square">Logan Square</button>
+                        <button class="pill-button" data-neighborhood="The Loop">The Loop</button>
+                    </div>
+                </div>
+            </div>
+
+            <button class="find-button" id="findButton" disabled>
+                <span class="button-text">Show Me the Crowd</span>
+            </button>
+
+            <div class="results-container" id="resultsContainer" style="display: none;">
+                <h2 class="results-title">Mission Briefing</h2>
+                <div class="results-list" id="resultsList"></div>
+            </div>
+
+            <div class="error-message" id="errorMessage" style="display: none;"></div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+    <footer style="margin-top: 50px; text-align: center; padding: 20px; border-top: 1px solid #333;">
+        <p style="color: #888; font-size: 0.9rem;">Help me build the Antigravity future.</p>
+        <a href="mailto:aiautomatedbusinesssolutions@GMAIL.COM?subject=Chicago%20Compass%20Feedback&body=I%20found%20a%20spot!%20/%20This%20spot%20was%20dead...%20/%20I%20suggest%20adding:" 
+           style="display: inline-block; padding: 10px 20px; background-color: #007bff; color: white; text-decoration: none; border-radius: 25px; font-weight: bold;">
+           Suggest a Vibe or Spot
+        </a>
+    </footer>
+</body>
+</html>
